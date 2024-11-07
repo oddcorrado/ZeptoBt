@@ -537,8 +537,6 @@ namespace ZeptoBt
             {
                 case WaitStatus.Idle:
                     {
-                        Debug.Log("dd " + dd + " Root " + Root + "Tree " + Tree);
-                        Debug.Log("dd Root " + Root);
                         stopDate = Tree.CurrentTime + dd.Get(Root.Evaluator);
                         waitStatus = WaitStatus.Running;
                         Status = (mm.Get(Root.Evaluator) == Mode.Block) ? NodeReturn.Runnning : NodeReturn.Runnning;

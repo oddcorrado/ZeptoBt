@@ -639,7 +639,7 @@ public class ZeptoBtViewer : MonoBehaviour
             typeDropdown.options.Add(data);
 
             var className = ZeptoBtRegistrar.NameToNode[kvp.Key];
-            Debug.Log($"{kvp.Key} {className}");
+            //Debug.Log($"{kvp.Key} {className}");
             Type nodeType = Type.GetType(className);
             if (nodeType == null) continue;
             var node = Activator.CreateInstance(nodeType);
